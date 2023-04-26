@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login_styles.css">
+
+</head>
+<body>
+    <div class="flex-row navbar">
+        <a href="" class="brand-name">Registration</a>
+        <ul class="flex-row nav-links">
+            <a href="">
+                <li class="nav-items">Home</li>
+            </a>
+            <a href="">
+                <li class="nav-items">About</li>
+            </a>
+            <a href="">
+                <li class="nav-items">Services</li>
+            </a>
+            <a href="">
+                <li class="nav-items">Pages</li>
+            </a>
+            <a href="">
+                <li class="nav-items">Blog</li>
+            </a>
+            <a href="">
+                <li class="nav-items">Contact</li>
+            </a>
+        </ul>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div>
+    <form action ="page2" default method="post">
+      
+        <label for="username">Username:</label>
+
+        <input type="text" name="username" placeholder="Username"
+            minlength="4" maxlength="32" size="30">
+
+        <label for="email">Email:</label>
+
+        <input type="email" id="email"  name ="email" placeholder="Email"
+                pattern=".+@gmail.com" size="30" required>
+   
+            <label for="pass">Password :</label>
+                <input type="password" id="pass" name="pw" placeholder="Password"
+                    minlength="8" required>
+
+        <h1>{{message}}</h1>
+       
+               
+        <input type="submit" value="Log in">   
+    </form>
+
+    </div> 
+
+</body>
+</html>
